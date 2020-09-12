@@ -5,7 +5,7 @@ LIST_FILE = "./resources/input/list.xlsx"
 TEMPLATE_FILE = "./resources/input/template.xlsx"
 
 KEY_1 = '施設名称'
-KEY_2 = '台数計算定員÷5'
+KEY_2 = '台数計算'
 
 # エクセルファイルを読み込む
 df_list = pd.read_excel(LIST_FILE, header=8, index_col=1)
