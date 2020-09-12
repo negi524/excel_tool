@@ -23,6 +23,6 @@ for index,row in target_data.iterrows():
     sheet['D11'] = '： ' + row[KEY_1]
     sheet['G19'] = row[KEY_2]
 
-    # outputディレクトリ配下にtest_インデックス名.xlsxという名前で保存する
-    book.save('./resources/output/' + str(index) + row['施設名称'] +  '.xlsx')
+    # outputディレクトリ配下にインデックス名+施設名.xlsxという名前で保存する
+    book.save('./resources/output/' + str(index) + row[KEY_1] +  '.xlsx')
     book.close()
